@@ -2,6 +2,8 @@
 
 CSnake is snake, in C.
 
+![Demo Image](https://github.com/manorajesh/csnake/blob/main/images/image.png)
+
 ## Features
 
 - snake
@@ -9,22 +11,20 @@ CSnake is snake, in C.
 ## Installation
 
 1. Clone the repository:
-
-   ```sh
-   git clone https://github.com/manorajesh/csnake.git
-   cd csnake
-   ```
+```sh
+git clone https://github.com/manorajesh/csnake.git
+cd csnake
+```
 
 2. Compile the game:
-
-   ```sh
-   make
-   ```
+```sh
+make
+```
 
 3. Run the game:
-   ```sh
-   ./csnake
-   ```
+```sh
+./csnake
+```
 
 ## Controls
 
