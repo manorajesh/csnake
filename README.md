@@ -1,4 +1,5 @@
 # CSnake
+![Build](https://github.com/manorajesh/csnake/actions/workflows/c-cpp.yml/badge.svg)
 
 CSnake is snake, in C.
 
