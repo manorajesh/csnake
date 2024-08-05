@@ -22,7 +22,7 @@ void draw_snake(struct Snake *snake, enum Direction dir) {
   // draw the body
   struct Snake *current = snake->next;
   while (current != NULL) {
-    mvprintw(current->y, current->x, "=");
+    mvprintw(current->y, current->x, "o");
     current = current->next;
   }
 }
