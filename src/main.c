@@ -7,7 +7,8 @@
 #include <string.h>
 #include <unistd.h>
 
-void process_input(int ch, enum Direction *dir) {
+void process_input(int ch, enum Direction *dir, struct Snake *snake,
+                   int *score) {
   switch (ch) {
   case 'q':
     endwin();
@@ -32,6 +33,12 @@ void process_input(int ch, enum Direction *dir) {
   case 'd':
     if (*dir != LEFT)
       *dir = RIGHT;
+    break;
+
+  case '=':
+  case '+':
+    add_segment(snake);
+    ++*score;
     break;
   }
 }
@@ -67,7 +74,7 @@ int main() {
     if (ret > 0 && (fds[0].revents & POLLIN)) {
       int ch = getch();
       if (ch != ERR) {
-        process_input(ch, &dir);
+        process_input(ch, &dir, snake, &score);
       }
     }
 
